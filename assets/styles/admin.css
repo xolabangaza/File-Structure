@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Mono', monospace;
+}
+
+/* header start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(198, 204, 210);
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+#navbar li a:hover{
+    color:cadetblue;
+}
+/* Header ends */
+
+/* Home starts */
+
+
+
+
+/* footer */
+
+footer{
+    background-color: rgb(198, 204, 210);
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.follow .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.copyright{
+    color:blue;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* media querry */
+@media (max-width:799px) {
+    
+}
