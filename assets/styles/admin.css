@@ -84,7 +84,19 @@ footer{
 
 }
 
+.hours{
+    margin-top: 40px;
+}
+
+.links{
+    margin-top: 40px;
+}
+.links li{
+    list-style: none;
+}
+
 /* media querry */
 @media (max-width:799px) {
     
 }
+
