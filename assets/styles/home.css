@@ -40,6 +40,14 @@
 /* Header ends */
 
 /* Home starts */
+#hero{
+    background-image: url(https://i.postimg.cc/90McHr03/HD-wallpaper-red-rapping-hood-alone-amoled-black-dark-hoodie-hq-music-night-person-red.jpg);
+    height:90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    background-repeat: no-repeat;
+}
 
 
 
