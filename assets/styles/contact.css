@@ -13,7 +13,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    /* position: sticky;
+    top: 0;
+    left: 0; */
 
 }
 #navbar{
@@ -47,8 +50,23 @@
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    color: #464646;
 }
+
+footer h4{
+    color: black;
+}
+
+footer .follow i {
+    color: #464646;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+
+
+
 
 .col{
     display: flex;
@@ -73,6 +91,7 @@ footer{
 .contact{
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .copyright{
@@ -100,7 +119,7 @@ footer{
 /* contact style */
 
 body{
-    background-color:ghostwhite
+    background-color:whitesmoke;
 }
 
 .contactform{
