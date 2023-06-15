@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    
 
 }
 #navbar{
@@ -39,7 +40,74 @@
 }
 /* Header ends */
 
-/* Home starts */
+/* contact style */
+
+body{
+    background-color:whitesmoke;
+}
+
+.contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 60px;
+
+}
+.p1{
+    display: flex;
+    justify-content: center;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-left: 10px;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+.message {
+   height: 150px;
+   padding-top: 10px;
+   border-radius: 6px;
+   border: 2px solid;
+   width: 500px;
+   margin-top: 20px;
+}
+
+.btn {
+    border-radius: 8px;
+    color: black;
+    margin-top: 14px;
+    padding: 10px;
+    font-size: 14px;
+    cursor:pointer;
+    box-align:center;
+    width: 100px;
+
+ }
+
+ input.btn:hover{
+    background-color:cornflowerblue;
+ }
+ .ms{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+ }
 
 
 
@@ -47,8 +115,23 @@
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    color: #464646;
 }
+
+footer h4{
+    color: black;
+}
+
+footer .follow i {
+    color: #464646;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+
+
+
 
 .col{
     display: flex;
@@ -73,6 +156,7 @@ footer{
 .contact{
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .copyright{
@@ -90,12 +174,43 @@ footer{
 
 .links{
     margin-top: 40px;
+    
 }
 .links li{
     list-style: none;
+    
 }
 
 /* media querry */
-@media (max-width:799px) {
-    
-}
+@media (max-width: 799px) {
+    #header {
+      padding: 10px;
+    }
+  
+    #navbar li {
+      padding: 0;
+      margin-right: 10px;
+    }
+  
+    .contactform {
+      margin: 60px auto;
+    }
+  }
+  
+  @media (max-width: 599px) {
+    #header {
+      padding: 10px;
+    }
+  
+    .flex,
+    .message {
+      max-width: 100%;
+    }
+  } 
+  
+  @media (max-width: 499px) {
+    .contactform {
+      max-width: 100%;
+    }
+  }
+

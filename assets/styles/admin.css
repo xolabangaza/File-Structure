@@ -13,7 +13,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    /* position: sticky;
+    top: 0;
+    left: 0; */
 
 }
 #navbar{
@@ -39,7 +42,60 @@
 }
 /* Header ends */
 
-/* Home starts */
+/* Admin starts */
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  h2{
+    color: #0056b3;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
 
 
 
@@ -47,7 +103,7 @@
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color: ghostwhite;
 }
 
 .col{

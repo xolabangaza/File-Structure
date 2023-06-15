@@ -13,13 +13,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    top: 0;
+    left: 0;
+
 
 }
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
      
 }
 #navbar li{
@@ -37,17 +40,114 @@
 #navbar li a:hover{
     color:cadetblue;
 }
+
+
 /* Header ends */
 
 /* Home starts */
+#hero{
+    background-image: url(https://i.postimg.cc/90McHr03/HD-wallpaper-red-rapping-hood-alone-amoled-black-dark-hoodie-hq-music-night-person-red.jpg);
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 16% right 0;
+    background-repeat: no-repeat;
+}
+
+#hero h1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+span{
+    color:beige
+}
+
+#featured button{
+    background-color:ghostwhite;
+    border-radius: 6px;
+    height: 35px;
+    width: 100px;
+    align-self: center;
+    cursor: grab;
+   
+}
+#featured button:hover{
+    background-color: darkcyan;
+}
 
 
+
+/* featured products */
+.image{
+    padding: 40px 80px;
+    
+    
+}
+
+.feat{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-container{
+    display: flex;
+}
+
+.second-container{
+    display: flex;
+}
+    
+    
+ #featured .feat img{
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+.product{
+    margin-inline: 10px;
+}
+
+.first-container, .second-container{
+    text-align: center;
+    padding: 20px 15px;
+    margin: 16px 0;
+    border: 1px solid rgb(166, 188, 212);
+    border-radius: 6px;   
+}
+
+
+#featured .feat h4{
+    color:blue;
+    padding: 6px 8px 6px 8px;
+}
+#featured .feat h4:hover{
+    background-color:cadetblue;
+    border-radius: 4px;
+    
+}
+h2{
+    text-align: center;
+
+}
 
 
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color:ghostwhite;
+    color: #464646;
+}
+
+footer h4{
+    color: black;
+}
+
+footer .follow i {
+    color: #464646;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 .col{
@@ -73,6 +173,7 @@ footer{
 .contact{
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .copyright{
@@ -93,7 +194,59 @@ footer{
 .links li{
     list-style: none;
 }
-/* media querry */
-@media (max-width:799px) {
+/* media queries */
+@media (max-width: 799px) {
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: ghostwhite;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px;
+    }
+  
+    #navbar li {
+        margin-bottom: 25px;
+      }
     
-}
+      /* Adjust other styles for smaller screens */
+      #header {
+        padding: 20px 40px;
+      }
+    
+      .image {
+        padding: 40px;
+      }
+    
+      .first-container,
+      .second-container {
+        padding: 10px;
+        margin: 10px 0;
+      }
+    }
+    @media (max-width: 599px) {
+        #header {
+          padding: 20px 10px;
+        }
+      
+        #navbar {
+          width: 100%;
+          right: 0;
+        }
+      
+        .image {
+          padding: 10px;
+        }
+      
+        .first-container,
+        .second-container {
+          padding: 5px;
+          margin: 5px 0;
+        }
+      }
