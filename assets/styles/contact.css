@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background: ghostwhite;
 
 }
 #navbar{
@@ -47,7 +47,7 @@
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color: ghostwhite
 }
 
 .col{
@@ -100,7 +100,7 @@ footer{
 /* contact style */
 
 body{
-    background-color:ghostwhite
+    background-color:gainsboro
 }
 
 .contactform{

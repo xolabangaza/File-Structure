@@ -13,7 +13,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
+    /* position: sticky; */
+    top: 0;
+    left: 0;
 
 }
 #navbar{
@@ -39,15 +42,42 @@
 }
 /* Header ends */
 
-/* Home starts */
+button{
+    background-color:cadetblue;
+    margin-top: 5px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-size: 15px;  
+}
+
+#photo{
+display:flex !important;
+flex-direction: row !important;
+}
 
 
+h1{
+    text-align: center;
+    color: crimson !important;
+}
 
 
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color: ghostwhite;
+}
+
+footer h4{
+  color: black;
+}
+
+footer .follow i {
+  color: #464646;
+  margin-top: 10px;
+  font-size: 25px;
 }
 
 .col{

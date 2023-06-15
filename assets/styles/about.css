@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background: ghostwhite;
 
 }
 #navbar{
@@ -39,7 +39,22 @@
 }
 /* Header ends */
 
-/* Home starts */
+/* about starts */
+section#about {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  section#about h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  section#about p {
+    margin-bottom: 20px;
+    color: #666;
+  }
 
 
 
@@ -47,7 +62,7 @@
 /* footer */
 
 footer{
-    background-color: rgb(198, 204, 210);
+    background-color:ghostwhite;
 }
 
 .col{
