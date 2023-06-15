@@ -37,7 +37,25 @@
 #navbar li a:hover{
     color:cadetblue;
 }
-/* Header ends */
+
+
+/* Hero starts */
+#hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    /* border: 1px dotted; */
+    /* border-radius: 8px; */
+    margin: 80px;
+    /* color: darkcyan; */
+    /* background-color:lavender; */
+}
+
+.heading{
+    margin-bottom: 40px;
+}
+
 
 /* about starts */
 section#about {
@@ -65,6 +83,7 @@ footer{
     background-color:ghostwhite;
 }
 
+
 .col{
     display: flex;
     flex-direction: row;
@@ -88,6 +107,7 @@ footer{
 .contact{
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .copyright{
@@ -109,6 +129,19 @@ footer{
 .links li{
     list-style: none;
 }
+
+
+h3{
+    margin-top: 40px;
+    
+}
+
+
+#hero img{
+    margin-top: 200px;
+}
+
+
 
 /* media querry */
 @media (max-width:799px) {

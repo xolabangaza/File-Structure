@@ -17,6 +17,10 @@
     /* position: sticky; */
     top: 0;
     left: 0;
+    background-color: ghostwhite;
+    /* position: sticky; */
+    top: 0;
+    left: 0;
 
 }
 #navbar{
@@ -57,6 +61,10 @@ display:flex !important;
 flex-direction: row !important;
 }
 
+#photo{
+display:flex !important;
+flex-direction: row !important;
+}
 
 h1{
     text-align: center;
@@ -67,6 +75,17 @@ h1{
 /* footer */
 
 footer{
+    background-color: ghostwhite;
+}
+
+footer h4{
+  color: black;
+}
+
+footer .follow i {
+  color: #464646;
+  margin-top: 10px;
+  font-size: 25px;
     background-color: ghostwhite;
 }
 
