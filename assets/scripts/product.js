@@ -162,10 +162,24 @@ const Products = [
       setCartItems();
     }
   }
+  function calculateTotalPrice() {
+    let totalPrice = 0;
+  
+    cart.forEach((product) => {
+      totalPrice += product.Price;
+    });
+  
+    return totalPrice;
+  }
+
+
   
   function updateCart() {
     const cartTable = document.getElementById("cart-table");
+    const cartTotal = document.getElementById("cart-total");
     cartTable.innerHTML = "";
+
+    let totalPrice = 0;
   
     cart.forEach((product, index) => {
       const cartItem = document.createElement("tr");
@@ -175,7 +189,10 @@ const Products = [
         <td><button class="btn btn-primary" onclick="removeFromCart(${index})">Del🚮</button></td>
       `;
       cartTable.appendChild(cartItem);
+      totalPrice += product.Price; 
     });
+
+    cartTotal.innerText = `Total: R${totalPrice.toFixed(2)}`; 
   } 
 
   function setCartItems() {
@@ -187,6 +204,7 @@ const Products = [
     updateCart();
     setCartItems();
   }
+  
 
   displayProducts(Products);
   function filterProducts() {
@@ -204,32 +222,16 @@ const Products = [
   displayProducts(selected);
 }
 
-  // Sort products by a given property
-// function sortProducts(property) {
-//   let sortedProducts = [...products];
-//   sortedProducts.sort((a, b) => {
-//     if (a[property] < b[property]) {
-//       return -1;
-//     }
-//     if (a[property] > b[property]) {
-//       return 1;
-//     }
-//     return 0;
-//   });
-//   displayProducts(sortedProducts);
-// }
-// // Add event listener to the sort by price button
-// document.getElementById("sort-by-price").addEventListener("click", () => {
-//   sortProducts("price");
-// });
-
-// // Add event listener to the sort by name button
-// document.getElementById("sort-by-name").addEventListener("click", () => {
-//   sortProducts("name");
-// });
+function checkout() {
+  if(shoppingCart.length > 0) {
+      clearCart();
+      alert("Thank you for your purchase")
+  } else {
+      alert("Your cart is empty, please add items before you checkout")
+  }
+}
 
   
-  displayProducts();
   updateCart();
   
   function showTask() {

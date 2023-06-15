@@ -46,13 +46,6 @@
       <option value="B">Boys</option>
     </select>
     <button onclick="filterProducts()" >Filter</button>
-             
-
-
-<!-- 
-        <button class="btn btn-primary" onclick="sortProducts()">Sort</button>
-        <button id="sort-by-price">Sort by Price</button>
-        <button id="sort-by-name">Sort by Name</button> -->
           
             <h1>Check out our products</h1>
         <div class="row products" id="products"></div> 
@@ -78,11 +71,13 @@
                 <th>Image</th>
               </tr>
             </table>
+            <p id="total-price">Total Price: R0</p>
+
           </div> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Checkout</button>
+          <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
         </div>
      </div>
    </div>
@@ -93,7 +88,6 @@
  <footer id="footer-sec">
         <div class="col">
         <div class="contact">
-            <h4>Contact</h4>
             <h4>Contact</h4>
             <p><strong>Address:</strong>Anywhere in Cape Town</p>
             <br>

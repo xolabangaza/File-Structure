@@ -143,8 +143,36 @@ h3{
 
 
 
-/* media querry */
-@media (max-width:799px) {
-    
-}
+/* media queries */
+@media (max-width: 799px) {
+    #header {
+      padding: 20px;
+    }
+  
+    #navbar {
+      flex-direction: column;
+    }
+  
+    #navbar li {
+      padding: 10px;
+    }
+  
+    #hero img {
+      margin-top: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #hero img {
+      margin-top: 50px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
 

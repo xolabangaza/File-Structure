@@ -1,4 +1,3 @@
-// Retrieve products from local storage
 let products = JSON.parse(localStorage.getItem("products")) || [];
 
 // Add new product to the list
@@ -23,7 +22,7 @@ function addProduct(event) {
   alert("Product added successfully!");
 }
 
-// Save products to local storage
+
 function saveProductsToLocalStorage() {
   localStorage.setItem("products", JSON.stringify(products));
 }
@@ -56,5 +55,5 @@ function displayProducts() {
 // Add event listener to the form submit event
 document.getElementById("add-product-form").addEventListener("submit", addProduct);
 
-// Display products on page load
+
 displayProducts();
