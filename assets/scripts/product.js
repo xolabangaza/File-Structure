@@ -41,15 +41,15 @@ const Products = [
       Image: "https://i.postimg.cc/vZ7zQMkv/images-4.jpg",
       Price: 150.00,
       name: "hoody",
-      desc:"smile",
-      type:"",
+      desc:"soft",
+      type:"M",
     },
     {
       id: 6,
       Image: "https://i.postimg.cc/BZyNpm22/images-3.jpg      ",
       Price: 249.00,
       name: "hoody",
-      desc:"smile",
+      desc:"comfy",
       type:"B",
     },
     {
@@ -57,7 +57,7 @@ const Products = [
       Image: "https://i.postimg.cc/65kjWM3B/download-9.jpg",
       Price: 349.00,
       name: "hoody",
-      desc:"smile",
+      desc:"soft",
       type:"M",
     },
     {
@@ -65,7 +65,7 @@ const Products = [
       Image: "https://i.postimg.cc/JzjTGjDZ/download-7.jpg",
       Price: 150.00,
       name: "hoody",
-      desc:"smile",
+      desc:"comfy",
       type:"M",
     },
     {
@@ -73,7 +73,7 @@ const Products = [
       Image: "https://i.postimg.cc/J4DYCfRT/download-6.jpg",
       Price: 299.00,
       name: "hoody",
-      desc:"smile",
+      desc:"soft touch",
       type:"M",
     },
     {
@@ -81,7 +81,7 @@ const Products = [
       Image: "https://i.postimg.cc/2yJHBw7F/download-5.jpg",
       Price: 199.00,
       name: "hoody",
-      desc:"smile",
+      desc:"it way comfy",
       type:"G",
     },
     {
@@ -89,7 +89,7 @@ const Products = [
       Image: "https://i.postimg.cc/J0t6ngZz/download-4.jpg",
       Price: 499.00,
       name: "hoody",
-      desc:"smile",
+      desc:"comfy",
       type:"B",
     },
     {
@@ -97,7 +97,7 @@ const Products = [
       Image: "https://i.postimg.cc/fW6pyzq4/Ladies-Bravo-Hooded-Sweater-Black.jpg      ",
       Price: 449.00,
       name: "hoody",
-      desc:"smile",
+      desc:"nice and soft",
       type:"W",
     },
     {
@@ -105,7 +105,7 @@ const Products = [
       Image: "https://i.postimg.cc/3w7tpWm6/download-10.jpg      ",
       Price: 349.00,
       name: "hoody",
-      desc:"smile",
+      desc:"soft",
       type:"B",
     },
     {
@@ -113,7 +113,7 @@ const Products = [
       Image: "https://i.postimg.cc/yYktYJyy/61-Vlhy-INk6-L.jpg",
       Price: 699.00,
       name: "hoody",
-      desc:"smile",
+      desc:"soft touch",
       type:"G",
     },
     {
@@ -121,7 +121,7 @@ const Products = [
       Image: "https://i.postimg.cc/hv3Y1gcm/51-M4-BW6m-JL.jpg",
       Price: 599.00,
       name: "hoody",
-      desc:"smile",
+      desc:"comfy hoody",
       type:"G",
     },
   ];
