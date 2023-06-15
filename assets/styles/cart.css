@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(198, 204, 210);
+    background-color: ghostwhite;
 
 }
 #navbar{
@@ -46,7 +46,7 @@
 
 /* footer */
 
-footer{
+/* footer{
     background-color: rgb(198, 204, 210);
 }
 
@@ -85,6 +85,6 @@ footer{
 }
 
 /* media querry */
-@media (max-width:799px) {
+/* @media (max-width:799px) {
     
-}
+} */ 

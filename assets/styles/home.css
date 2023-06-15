@@ -13,10 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    /* background: rgb(198, 204, 210); */
     background-color: ghostwhite;
-    /* box-shadow: 10px 10px 10px 0 ghostwhite ; */
-    /* position: sticky; */
     top: 0;
     left: 0;
 
@@ -25,9 +22,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    
+    justify-content: center; 
      
 }
 #navbar li{
@@ -70,7 +65,6 @@ span{
 }
 
 #featured button{
-    /* position:absolute; */
     background-color:ghostwhite;
     border-radius: 6px;
     height: 35px;
@@ -139,19 +133,9 @@ h2{
 }
 
 
-
-
-
-    
-    
-
-
-
-
 /* footer */
 
 footer{
-    /* background-color: rgb(198, 204, 210); */
     background-color:ghostwhite;
     color: #464646;
 }
@@ -210,23 +194,59 @@ footer .follow i {
 .links li{
     list-style: none;
 }
-/* media querry */
-@media (max-width:799px) {
+/* media queries */
+@media (max-width: 799px) {
     #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: ghostwhite;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        padding: 80px 0 0 10px ;
-}
-#navbar li {
-    margin-bottom:25px;
-}
-}
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: ghostwhite;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px;
+    }
+  
+    #navbar li {
+        margin-bottom: 25px;
+      }
+    
+      /* Adjust other styles for smaller screens */
+      #header {
+        padding: 20px 40px;
+      }
+    
+      .image {
+        padding: 40px;
+      }
+    
+      .first-container,
+      .second-container {
+        padding: 10px;
+        margin: 10px 0;
+      }
+    }
+    @media (max-width: 599px) {
+        #header {
+          padding: 20px 10px;
+        }
+      
+        #navbar {
+          width: 100%;
+          right: 0;
+        }
+      
+        .image {
+          padding: 10px;
+        }
+      
+        .first-container,
+        .second-container {
+          padding: 5px;
+          margin: 5px 0;
+        }
+      }
