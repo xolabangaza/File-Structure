@@ -1,4 +1,4 @@
-let products = JSON.parse(localStorage.getItem("products")) || [];
+let adminProd = JSON.parse(localStorage.getItem("products")) || [];
 
 // Add new product to the list
 function addProduct(event) {
@@ -15,7 +15,7 @@ function addProduct(event) {
     price: parseFloat(productPrice),
   };
 
-  products.push(newProduct);
+  adminProd.push(newProduct);
   saveProductsToLocalStorage();
   resetForm();
   displayProducts();
@@ -34,22 +34,43 @@ function resetForm() {
 
 // Display products in the table
 function displayProducts() {
-  const tableBody = document.getElementById("product-table").getElementsByTagName("tbody")[0];
+  const tableBody = document.getElementById("product-table");//.getElementsByTagName("tbody")[0]
   tableBody.innerHTML = "";
 
-  for (let i = 0; i < products.length; i++) {
-    const product = products[i];
+  // for (let i = 0; i < products.length; i++) {
+  //   const product = products[i];
 
+  //   const row = document.createElement("tr");
+  //   row.innerHTML = `
+  //     <td>${product.id}</td>
+  //     <td>${product.name}</td>
+  //     <td><img src="${product.image}" width="100" height="100"></td>
+  //     <td>R${product.price}</td>
+  //     <td>
+  //     <button class="btn btn-primary" onclick="delAd(${index})">Del🚮</button>
+  //     </td>
+  //   `;
+
+  //   tableBody.appendChild(row);
+  // }
+  adminProd.forEach((product) => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${product.id}</td>
       <td>${product.name}</td>
-      <td><img src="${product.image}" width="50" height="50"></td>
-      <td>${product.price}</td>
+      <td><img src="${product.image}" width="150" height="150"></td>
+      <td>R${product.price}</td>
+      <td>
+      <button class="btn btn" onclick="delAd(${product.id})">Delete</button>
+      </td>
     `;
-
     tableBody.appendChild(row);
-  }
+  })
+}
+displayProducts();
+
+function delAd(){
+
 }
 
 // Add event listener to the form submit event

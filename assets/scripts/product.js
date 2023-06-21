@@ -1,3 +1,5 @@
+let adminProd = JSON.parse(localStorage.getItem("products")) || [];
+
 const Products = [
     {
       id: 1,
@@ -125,6 +127,10 @@ const Products = [
       type:"G",
     },
   ];
+
+  for(let i = 0; i < adminProd.length; i++) {
+    Products.push(adminProd[i])
+  }
   
  
   
@@ -222,8 +228,14 @@ const Products = [
   displayProducts(selected);
 }
 
+function clearCart() {
+  cart = [];
+  localStorage.removeItem("cart");
+  updateCart();
+}
+
 function checkout() {
-  if(shoppingCart.length > 0) {
+  if(cart.length > 0) {
       clearCart();
       alert("Thank you for your purchase")
   } else {
