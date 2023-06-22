@@ -132,7 +132,6 @@ const Products = [
     Products.push(adminProd[i])
   }
   
- 
   
   function displayProducts() {
     let dispProduct = document.getElementById("products");
@@ -210,6 +209,12 @@ const Products = [
     updateCart();
     setCartItems();
   }
+
+  // Sort products by price
+function sortPrice() {
+  adminProd.sort((a, b) => a.price - b.price);
+  
+}
   
 
   displayProducts(Products);

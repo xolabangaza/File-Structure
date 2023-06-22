@@ -4,12 +4,14 @@ let adminProd = JSON.parse(localStorage.getItem("products")) || [];
 function addProduct(event) {
   event.preventDefault();
 
+  
+
   const productName = document.getElementById("product-name").value;
   const productImage = document.getElementById("product-image").value;
   const productPrice = document.getElementById("product-price").value;
 
   const newProduct = {
-    id: products.length + 1,
+    id: adminProd.length + 1,
     name: productName,
     image: productImage,
     price: parseFloat(productPrice),
@@ -24,7 +26,7 @@ function addProduct(event) {
 
 
 function saveProductsToLocalStorage() {
-  localStorage.setItem("products", JSON.stringify(products));
+  localStorage.setItem("products", JSON.stringify(adminProd));
 }
 
 // Reset the form fields
@@ -37,22 +39,7 @@ function displayProducts() {
   const tableBody = document.getElementById("product-table");//.getElementsByTagName("tbody")[0]
   tableBody.innerHTML = "";
 
-  // for (let i = 0; i < products.length; i++) {
-  //   const product = products[i];
 
-  //   const row = document.createElement("tr");
-  //   row.innerHTML = `
-  //     <td>${product.id}</td>
-  //     <td>${product.name}</td>
-  //     <td><img src="${product.image}" width="100" height="100"></td>
-  //     <td>R${product.price}</td>
-  //     <td>
-  //     <button class="btn btn-primary" onclick="delAd(${index})">Del🚮</button>
-  //     </td>
-  //   `;
-
-  //   tableBody.appendChild(row);
-  // }
   adminProd.forEach((product) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -69,9 +56,13 @@ function displayProducts() {
 }
 displayProducts();
 
-function delAd(){
-
+function delAd(productId) {
+  adminProd = adminProd.filter(product => product.id !== productId);
+  saveProductsToLocalStorage();
+  displayProducts();
+  alert("Product deleted successfully!");
 }
+
 
 // Add event listener to the form submit event
 document.getElementById("add-product-form").addEventListener("submit", addProduct);

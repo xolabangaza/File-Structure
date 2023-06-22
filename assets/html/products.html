@@ -38,14 +38,16 @@
       </section>
 
     <section>
-     <select id="category">
+      <button onclick="sortPrice()">Sort by Price</button>
+      <button onclick="filterProducts()">Filter</button>
+    <select id="category">
       <option value="A">All</option>
       <option value="W">Women</option>   
       <option value="M">Men</option>     
       <option value="G">Girls</option>      
       <option value="B">Boys</option>
     </select>
-    <button onclick="filterProducts()" >Filter</button>
+
           
             <h1>Check out our products</h1>
         <div class="row products" id="products"></div> 
